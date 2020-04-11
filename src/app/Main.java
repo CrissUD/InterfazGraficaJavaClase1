@@ -4,7 +4,7 @@ import app.vistaPrincipal.VistaPrincipalTemplate;
 
 /**
  *
- * @author Cristian Felipe Patiño Caceres
+ * @author Cristian Felipe Patiño Cáceres
  */
 public class Main {
 
