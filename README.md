@@ -268,6 +268,14 @@ De esta forma se podria pensar que se realizo de manera correcta un canal de com
 
 Lo que pasa en realidad es que la clase **VistaPrincipalComponent** crea un objeto de tipo **VistaPrincipalTemplate** y esta a su vez crea otro objeto de tipo **VistaPrincipalComponent** por lo que ahora en tiempo de ejecucion hay dos objetos de la misma clase y no hay una sola comunicacion directa entra ambos objetos.
 
+# Resultado
+
+El resultado obtenido hasta ahora despues de la configuracion inicial de nuestro componente es la siguiente:
+
+<div align="center">
+  <img  src="./resources/resultado.png">
+</div>
+
 # Actividades
 
 - Realizar el formulario Diagnostico de Google enviado por correo electronico.
