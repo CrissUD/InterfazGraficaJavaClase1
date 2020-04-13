@@ -204,7 +204,8 @@ Nuestra Clase Template tiene ciertas características que a continuación serán
 
 En la imagen anterior se puede ver una serie de configuraciones, estas le dan características a la ventana y esto es posible gracias a la herencia a la clase **JFrame**. Cada configuración tiene su propósito:
 
-- **setDefaultCloseOperation:** Recibe en parámetro configuraciones Java. Le indica al compilador que una vez la ventana sea cerrada el programa dejara de correr, esto lo hace gracias al parámetro recibido **EXIT_ON_CLOSE**
+- **super:** Recibe por parámetro un String y le da el titulo a nuestra ventana que se vera reflejada en la barra superior de la interfaz. Es importante recalcar que este método debe colocarse como primera linea de código dentro del constructor, de lo contrario no tendrá efecto en la vista.
+- **setDefaultCloseOperation:** Recibe por parámetro configuraciones Java. Le indica al compilador que una vez la ventana sea cerrada el programa dejara de correr, esto lo hace gracias al parámetro recibido **EXIT_ON_CLOSE**
 - **setSize:** Recibe como parámetros un par de enteros. Le da propiedades de ancho y alto a nuestra ventana, en este caso nuestra ventana ocupara 1200 pixeles de ancho y 700 pixeles de alto.
 - **setLocationRelativeTo:** Recibe como parámetro la clase que quiere ser posicionada. le indica al sistema que nuestra ventana se posicione en el centro del monitor, el **this** como parámetro indica que esta clase es la ventana que se quiere dejar centrada.
 - **setLayout** Recibe por parámetro el Layout que quiera ser utilizado para posicionamiento. Java maneja el posicionamiento de sus objetos gráficos por medio de Layouts, este posicionamiento es algo confuso de entender cuando se esta empezando por lo que por ahora es mejor dejarlo **null** y ser nosotros mismos los que nos encarguemos del posicionamiento de nuestros objetos gráficos.

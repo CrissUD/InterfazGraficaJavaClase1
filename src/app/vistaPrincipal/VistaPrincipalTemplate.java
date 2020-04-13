@@ -2,20 +2,24 @@ package app.vistaPrincipal;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JTextField;
+
 /**
  *
  * @author Cristian Felipe Patiño Cáceres
  */
-public class VistaPrincipalTemplate extends JFrame{
-    
+public class VistaPrincipalTemplate extends JFrame {
+
     private JButton bEnviar;
     private JTextField tNombre;
-    
-    public VistaPrincipalTemplate(){
-        
+    private JLabel lnombre;
+
+    public VistaPrincipalTemplate() {
+        super("Vista Principal");
+
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(1200,700);
+        setSize(1200, 700);
         setLocationRelativeTo(this);
         setLayout(null);
         setVisible(true);
