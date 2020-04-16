@@ -94,7 +94,7 @@ Los datos evolucionan a un concepto mas grande, estos son los arreglos. Los arre
 
 - **Datos homogéneos:** Un arreglo es un conjunto finito de n datos y solo puede manejar un único tipo de dato. Esto quiere decir que en dado caso de crear un arreglo de números enteros, por ningún motivo en ninguna posición de dicho arreglo, este puede contener números decimales o caracteres. O por ejemplo un arreglo de Strings no puede contener datos tipo numéricos etc.
 - **Tamaño estático:** Estos tienen un tamaño inicial y no es posible cambiar el tamaño de este, si un arreglo de enteros inicia con un espacio de 30 tendrá esa capacidad y no se puede cambiar.
-- **Posicionamiento:** Cuando se quiere acceder a un dato especifico dentro del arreglo se debe tener en cuenta su posición dentro del mismo. Mientras un arreglo contenga datos el primer elemento, segundo, tercero,…, enésimo de este puede ser identificado a través de un numero ordenado que empieza en 0 y termina en (n-1) (el tamaño - 1 ya que inicia en 0) y se conoce como **indice de posición**.
+- **Posicionamiento:** Cuando se quiere acceder a un dato especifico dentro del arreglo se debe tener en cuenta su posición dentro del mismo. Mientras un arreglo contenga datos el primer elemento, segundo, tercero,…, enésimo de éste, puede ser identificado a través de un numero ordenado que empieza en 0 y termina en (n-1) (el tamaño - 1 ya que inicia en 0) y se conoce como **indice de posición**.
 - **Dimensiones:** Estos pueden tener varias dimensiones que se deben indicar cuando se declara el arreglo y esta dimension tampoco podrá ser cambiada.
   - **1 dimension:** Los arreglos de una dimension son conocidos como vectores
   - **2 dimensiones** Los arreglos de 2 dimensiones son conocidos como Matrices
@@ -106,7 +106,7 @@ Los datos evolucionan a un concepto mas grande, estos son los arreglos. Los arre
 
 Se puede notar que existen varias partes importantes a la hora de declarar que aparecen:
 
-- **Dimension de arreglo:** Se debe denotar la dimension del arreglo con paréntesis cuadrados [ ]
+- **Dimension de arreglo:** Se debe denotar la dimension del arreglo con paréntesis cuadrados [ ].
 - **Inicialización de Arreglo:** Esta puede ser de varias formas y tampoco es obligatorio realizar en la declaración sin embargo es importante denotar que una vez se inicializa un arreglo se debe indicar el tamaño que tendrá o en su defecto el contenido que este tendrá.
 
 ## Estructuras de datos
