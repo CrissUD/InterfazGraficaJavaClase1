@@ -225,6 +225,22 @@ Cuando se quiera crear atributos estos deben ir al comienzo de la clase y genera
   <p>Clase VistaPrincipalTemplate con la declaración de objetos gráficos y la importación de sus respectivas librerías</p>
 </div>
 
+Vamos a crear un método solo para simular como es tener un método dentro de la clase sin embargo solo sera para ese propósito:
+
+```javascript
+public void saludar(){
+    String mensaje = "Hola Mundo";
+    System.out.println(mensaje);
+}
+```
+Se puede notar que el método tiene una variable llamada **mensaje** de tipo String, y es una variable por que solo sera conocido por este método. La clase se vera así finalmente con sus respectivas partes.
+
+<div align="center">
+  <img  src="./resources/codigo.png">
+  <p>Clase VistaPrincipalTemplate final</p>
+</div>
+
+
 # Resultado
 
 El resultado obtenido hasta ahora después de la configuración inicial de nuestro componente es la siguiente:

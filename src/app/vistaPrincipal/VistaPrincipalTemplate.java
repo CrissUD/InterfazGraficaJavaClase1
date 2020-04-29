@@ -17,11 +17,16 @@ public class VistaPrincipalTemplate extends JFrame {
 
     public VistaPrincipalTemplate() {
         super("Vista Principal");
-
+        this.saludar();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(1200, 700);
         setLocationRelativeTo(this);
         setLayout(null);
         setVisible(true);
+    }
+
+    public void saludar(){
+        String mensaje = "Hola Mundo";
+        System.out.println(mensaje);
     }
 }
