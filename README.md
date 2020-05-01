@@ -155,6 +155,20 @@ Se puede ver que en la declaración de un objeto ocurren dos cosas interesantes:
 
 Una cosa a resaltar es el acceso a los atributos y métodos, puede notarse que al intentar acceder a la variable **numero** de la clase no es posible acceder. Esto debido a que este atributo es de acceso **privado**.
 
+Un aspecto importante a mencionar son los **métodos**  que contiene cada clase, estos tienen varias partes:
+<div align='center'>
+    <img  src='./resources/metodo.png'>
+    <p>Partes de un método y como llamarlo</p>
+</div>  
+
+Se puede observar que un método cuenta con:
+* **Tipo de acceso**: Puede ser publico, privado o protegido, sin embargo la mayoría de las veces se va a encontrar como publico.
+* **Tipo de retorno**: Es el tipo de dato que el método puede retornar, si no retorna nada generalmente se pone la palabra clave **void**, un método puede retornar cualquier tipo de dato desde un dato primitivo hasta objetos, arreglos, colecciónes (Lista de objetos) etc.
+* **Nombre del método**: Es arbitrario y generalmente se inicia con minúscula.
+* **Parámetros**: Un método puede recibir por parámetros cualquier cantidad de datos y de cualquier tipo, estos se ponen dentro del paréntesis y se debe denotar siempre el **tipo de dato** seguido del **nombre de la variable**, si un método no recibe nada por parámetro se pone los paréntesis vacíos "**( )**".
+* **Contenido**: Es el código escrito dentro del método, una cosa importante a aclarar es que si el método retorna algún tipo de dato obligatoriamente dentro del contenido debe estar la palabra clave **return** seguido de la variable que va a retornar y esta debe coincidir con el tipo de dato que se dijo que iba a retornar. 
+* **Argumentos**: Cuando un método se llama desde otra parte del código y el método exige el recibimiento de datos por parámetros se debe enviar cuando se llama unas variables dentro del paréntesis y estas se conocerán como argumentos. Note que en el caso de envío no es necesario denotar el tipo de dato que es la variable, con solo esta ultima basta, sin embargo Java internamente comprueba que la variable enviada corresponda al tipo de dato que se pide.
+
 <div align="center">
   <img  src="./resources/objetos2.png">
 </div>
