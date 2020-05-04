@@ -33,13 +33,13 @@ Curso propuesto por el grupo de trabajo Semana de Ingenio y Diseño (**SID**) de
 A continuación se muestran las temáticas que se dictaran en el curso.
 
 <div align="center">
-  <img  src="./resources/tematicas1.png">
+  <img  src="https://i.imgur.com/jqxWaPJ.png">
 </div>
 
 Aunque las temáticas anteriores son importantes y fundamentales, considero que algo **mas importante que se quiere enseñar es la perspectiva de una arquitectura para la construcción de nuestras aplicaciones gráficas de los clientes**.
 
 <div align="center">
-  <img  src="./resources/tematicas2.png">
+  <img  src="https://i.imgur.com/DthNkAc.png">
 </div>
 
 El anterior esquema esta basado en Frameworks y Librerías muy usados en el entorno del desarrollo Frontend y su enfoque da una vision organizada y estandarizada de como trabajar con las aplicaciones cliente. Se busca aterrizar esos conceptos utilizando el lenguaje Java para aplicaciones de escritorio, esto ademas de permitir la creación de aplicaciones organizadas y estandarizadas ayudará al entendimiento principal de las metodologías que estas propuestas realizan y asi pasar de una manera mas fácil a estas tecnologías.
@@ -47,7 +47,7 @@ El anterior esquema esta basado en Frameworks y Librerías muy usados en el ento
 Para los estudiantes que quieren obtener el grupo de trabajo como requisito de la carrera de Ingeniería de Sistemas a continuación se muestra los porcentajes de notas que se realizaran:
 
 <div align="center">
-  <img  src="./resources/calificaciones.png">
+  <img  src="https://i.imgur.com/XqLJE2q.png">
 </div>
 
 ## Alcances
@@ -55,15 +55,15 @@ Para los estudiantes que quieren obtener el grupo de trabajo como requisito de l
 A continuación se muestra algunos proyectos realizados por estudiantes que pasaron por el curso anteriormente:
 
 <div align="center">
-  <img  src="./resources/alcance1.png">
+  <img  src="https://i.imgur.com/Xgqa0q4.png">
 </div>
 
 <div align="center">
-  <img  src="./resources/alcance2.png">
+  <img  src="https://i.imgur.com/oWF0LSl.png">
 </div>
 
 <div align="center">
-  <img  src="./resources/alcance3.png">
+  <img  src="https://i.imgur.com/YVb2ttf.png">
 </div>
 
 # Definición de Objeto y Objetos Gráficos en Java
@@ -75,7 +75,7 @@ Para empezar se va hablar de la evolución de los datos en la programación para
 Primero tenemos los datos Primitivos, estos datos son la parte mas pequeña en cuanto a variables se refiere. Estos son tipos de datos que se encuentran en cualquier lenguaje de programación en la actualidad, en la imagen siguiente se ve alguno de estos mas la forma de declarar (en Java) y su respectiva Notación.
 
 <div align="center">
-  <img  src="./resources/datosPrimitivos.png">
+  <img  src="https://i.imgur.com/zN0mZT6.png">
 </div>
 
 Puede notarse que la declaración consta de varias partes:
@@ -101,7 +101,7 @@ Los datos evolucionan a un concepto mas grande, estos son los arreglos. Los arre
   - **n dimensiones** Los arreglos pueden tener n dimensiones estos arreglos normalmente se entienden como una matriz que contiene matrices o vectores dentro y asi sucesivamente. Java no soporta de forma normal este tipo de arreglos pero en Python por ejemplo es común trabajar con arreglos de este tipo.
 
 <div align="center">
-  <img  src="./resources/arreglos.png">
+  <img  src="https://i.imgur.com/GHBugBj.png">
 </div>
 
 Se puede notar que existen varias partes importantes a la hora de declarar que aparecen:
@@ -114,7 +114,7 @@ Se puede notar que existen varias partes importantes a la hora de declarar que a
 Una estructura de datos es un tipo de dato que tiene la capacidad de contener otros datos, a diferencia de un arreglo puede contener datos de diferentes tipos, incluso el concepto es tan amplio que tiene la capacidad de contener arreglos. Otro aspecto importante y que da lugar a un area entera de investigación es la capacidad que tiene una estructura de datos para contener otra estructura. Esto da la creación de listas, pilas, colas y arboles.
 
 <div align="center">
-  <img  src="./resources/estructurasDatos.png">
+  <img  src="https://i.imgur.com/KLwVPMs.png">
 </div>
 Nótese que en la declaración ha cambiado algo importante:
 
@@ -127,7 +127,7 @@ Los objetos son tomados del concepto de las estructuras de datos, sin embargo es
 
 - **Funcionalidades:** A diferencia de las estructuras de datos un objeto tiene una serie de **métodos** (funciones) que le proporcionan comportamiento a este. Tal concepto es importante y por lo general son los métodos el medio por el cual un objeto interactúa con otro.
 <div align="center">
-  <img  src="./resources/metodos.png">
+  <img  src="https://i.imgur.com/pc6wCJy.png">
   <p>Ejemplo de métodos encargados de obtener y configurar un atributo nombre</p>
 </div>
 
@@ -137,14 +137,14 @@ Los objetos son tomados del concepto de las estructuras de datos, sin embargo es
 - **Constructor:** Entre sus métodos una clase tiene por defecto un Constructor. Este método es la función por la cual otra clase podrá realizar una ejemplificación del objeto. El constructor habitualmente tiene el mismo nombre que la clase.
 
 <div align="center">
-  <img  src="./resources/clase.png">
+  <img  src="https://i.imgur.com/deSbkDe.png">
   <p>Ejemplo de una clase que representa los atributos y comportamiento de un objeto Casa con sus respectivas partes explicadas</p>
 </div>
 
 A continuación se ve el ejemplo de una clase y como crear el objeto.
 
 <div align="center">
-  <img  src="./resources/objetos1.png">
+  <img  src="https://i.imgur.com/96M4dCx.png">
 </div>
 
 Se puede ver que en la declaración de un objeto ocurren dos cosas interesantes:
@@ -157,7 +157,7 @@ Una cosa a resaltar es el acceso a los atributos y métodos, puede notarse que a
 
 Un aspecto importante a mencionar son los **métodos**  que contiene cada clase, estos tienen varias partes:
 <div align='center'>
-    <img  src='./resources/metodo.png'>
+    <img  src='https://i.imgur.com/fxVFwb5.png'>
     <p>Partes de un método y como llamarlo</p>
 </div>  
 
@@ -170,7 +170,7 @@ Se puede observar que un método cuenta con:
 * **Argumentos**: Cuando un método se llama desde otra parte del código y el método exige el recibimiento de datos por parámetros se debe enviar cuando se llama unas variables dentro del paréntesis y estas se conocerán como argumentos. Note que en el caso de envío no es necesario denotar el tipo de dato que es la variable, con solo esta ultima basta, sin embargo Java internamente comprueba que la variable enviada corresponda al tipo de dato que se pide.
 
 <div align="center">
-  <img  src="./resources/objetos2.png">
+  <img  src="https://i.imgur.com/542tIML.png">
 </div>
 
 Para explicar mejor el concepto de objetos podemos ver en la imagen anterior dos clases, algo a resaltar es que todos los atributos son privados y los métodos son públicos en ambas clases, esto generalmente debe realizarse por principios del paradigma orientado a objetos.
@@ -178,7 +178,7 @@ Para explicar mejor el concepto de objetos podemos ver en la imagen anterior dos
 Dentro de la clase carro entre uno de sus atributos esta el objeto Motor. Tenemos que ejemplificar el objeto antes de acceder a sus métodos y este se hace dentro del constructor para este caso (la ejemplificación del objeto se puede realizar en cualquier parte del código). Una vez el objeto este listo se pueden acceder a sus funcionalidades como por ejemplo **encender()**. Mas adelante en otra parte del código de la clase **Carro** por ejemplo en el método **arrancar()** se necesita obtener la información del cilindraje del motor, puede notarse que el atributo **cilindraje** de la clase **Motor** es privada pero por medio de su método **devolverCilindraje()** este devolverá el valor y se igualaría a la variable creada para el propósito del método arrancar.
 
 <div align="center">
-  <img  src="./resources/objetos3.png">
+  <img  src="https://i.imgur.com/KSFDD8p.png">
 </div>
 
 Un objeto gráfico UI no es mas que clases creadas por los desarrolladores de Java con los que podremos interactuar a traves de la ejemplificación de su objeto, se puede notar que al igual que una clase común este tiene atributos y métodos por los cuales se puede acceder, con estas funcionalidades es posible mostrar una interfaz de usuario.
@@ -192,13 +192,13 @@ En Java existen muchas formas de crear Interfaces gráficas y no existe en reali
 - Al crear una clase UI lo primero que se realiza es definir el nombre de la clase, por motivos de estándar se colocara el nombre de la clase (es arbitrario) seguido de la palabra **Template**. Así por ejemplo si quiero crear una clase llamada _VistaPrincipal_ esta quedara entonces con el nombre **VistaPrincipalTemplate**, esto tiene su razón y mas adelante en el curso esta razón sera explicada.
 
 <div align="center">
-  <img  src="./resources/paquetes.png">
+  <img  src="https://i.imgur.com/3aL0m2n.png">
 </div>
 
 Puede se puede notar que en nuestro paquete raíz **app**, existe otra clase Main.java, esta clase es la que ejecuta el programa. Desde esta clase llamamos a nuestra vista principal para poder ser vista.
 
 <div align="center">
-  <img  src="./resources/ejemplificacion.png">
+  <img  src="https://i.imgur.com/PNiZIvm.png">
   <p>Creación y ejemplificación del objeto VistaPrincipal desde la Clase Main</p>
 </div>
 
@@ -208,13 +208,13 @@ Nuestra Clase Template tiene ciertas características que a continuación serán
 - **No** se encarga del manejo de eventos ni llamada de servicios ni operaciones lógicas, su responsabilidad se reduce a la muestra de interfaces Gráficas y muestra y recolección de información que el usuario necesite ver o que este recopile.
 - Hereda de una clase **JFrame** esto le dará propiedades gráficas a nuestra clase para ser mostrada al usuario.
 <div align="center">
-  <img  src="./resources/extends.png">
+  <img  src="https://i.imgur.com/U7JyT4W.png">
 </div>
 
 - Importara las librerías necesarias para configurar objetos gráficos en pantalla.
 - Como propuesta de estándar en este curso la configuración de objetos gráficos se realizará dentro del método **Constructor** sin embargo si se quiere configurar estos objetos en métodos separados no hay problema.
 <div align="center">
-  <img  src="./resources/configuracion.png">
+  <img  src="https://i.imgur.com/OBdLqiU.png">
 </div>
 
 En la imagen anterior se puede ver una serie de configuraciones, estas le dan características a la ventana y esto es posible gracias a la herencia a la clase **JFrame**. Cada configuración tiene su propósito:
@@ -235,7 +235,7 @@ Existen otros métodos de configuración en nuestras ventanas que podrían ser d
 Cuando se quiera crear atributos estos deben ir al comienzo de la clase y generalmente serán privados como se hablo anteriormente. Es común que los atributos para una clase UI sean objetos gráficos por lo que muchas veces sera necesaria la importación de librerías que soporten la creación de estos objetos. Normalmente cuando se declaran estos objetos el editor de texto ayuda con la importación automática de estas librerías y se colocarán antes de iniciar la clase.
 
 <div align="center">
-  <img  src="./resources/claseVista.png">
+  <img  src="https://i.imgur.com/iqI0J0Q.png">
   <p>Clase VistaPrincipalTemplate con la declaración de objetos gráficos y la importación de sus respectivas librerías</p>
 </div>
 
@@ -250,7 +250,7 @@ public void saludar(){
 Se puede notar que el método tiene una variable llamada **mensaje** de tipo String, y es una variable por que solo sera conocido por este método. La clase se vera así finalmente con sus respectivas partes.
 
 <div align="center">
-  <img  src="./resources/codigo.png">
+  <img  src="https://i.imgur.com/2rnxzcQ.png">
   <p>Clase VistaPrincipalTemplate final</p>
 </div>
 
@@ -260,7 +260,7 @@ Se puede notar que el método tiene una variable llamada **mensaje** de tipo Str
 El resultado obtenido hasta ahora después de la configuración inicial de nuestro componente es la siguiente:
 
 <div align="center">
-  <img  src="./resources/resultado.png">
+  <img  src="https://i.imgur.com/MTQJGTO.png">
 </div>
 
 # Actividades
