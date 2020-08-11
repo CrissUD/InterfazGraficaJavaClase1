@@ -1,5 +1,7 @@
 package app.vistaPrincipal;
 
+import java.awt.Color;
+
 import javax.swing.JFrame;
 // import javax.swing.JButton;
 // import javax.swing.JLabel;
@@ -24,6 +26,8 @@ public class VistaPrincipalTemplate extends JFrame {
         setSize(1200, 700);
         setLocationRelativeTo(this);
         setLayout(null);
+        // setUndecorated(true);
+        // getContentPane().setBackground(Color.WHITE);
         setVisible(true);
     }
 
