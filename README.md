@@ -98,7 +98,7 @@ Los datos evolucionan a un concepto mas grande, estos son los arreglos. Los arre
 - **Dimensiones:** Estos pueden tener varias dimensiones que se deben indicar cuando se declara el arreglo y esta dimension tampoco podrá ser cambiada.
   - **1 dimension:** Los arreglos de una dimension son conocidos como vectores
   - **2 dimensiones** Los arreglos de 2 dimensiones son conocidos como Matrices
-  - **n dimensiones** Los arreglos pueden tener n dimensiones estos arreglos normalmente se entienden como una matriz que contiene matrices o vectores dentro y asi sucesivamente. Java no soporta de forma normal este tipo de arreglos pero en Python por ejemplo es común trabajar con arreglos de este tipo.
+  - **n dimensiones** Los arreglos pueden tener n dimensiones estos arreglos normalmente se entienden como una matriz que contiene otras matrices o vectores dentro y asi sucesivamente. 
 
 <div align="center">
   <img  src="https://i.imgur.com/GHBugBj.png">
@@ -118,7 +118,7 @@ Una estructura de datos es un tipo de dato que tiene la capacidad de contener ot
 </div>
 Nótese que en la declaración ha cambiado algo importante:
 
-- **Tipo de dato:** El tipo de dato ya no es convencional, no es una palabra clave del lenguaje (int, String, float etc.) sino que es un tipo de dato que tendrá el nombre de la estructura creada, esto quiere decir que al crear una estructura de datos se esta creando también un tipo de dato y se puede manipular mediante una variable. Este concepto se suele llamar como **tipo de dato abstracto**.
+- **Tipo de dato abstracto:** El tipo de dato ya no es convencional, no es una palabra clave del lenguaje (int, String, float etc.) sino que es un tipo de dato que tendrá el nombre de la estructura creada, esto quiere decir que al crear una estructura de datos se esta creando también un tipo de dato y se puede manipular mediante una variable. Este concepto se suele llamar como **tipo de dato abstracto**.
 - **Inicializar estructura:** En Java el concepto de estructuras esta implementado con el concepto de objetos asi que no es posible dejar un ejemplo claro, sin embargo en lenguajes como C o C++ se puede inicializar como se ve en la imagen.
 
 ## Objetos
@@ -181,7 +181,7 @@ Dentro de la clase carro entre uno de sus atributos esta el objeto Motor. Tenemo
   <img  src="https://i.imgur.com/KSFDD8p.png">
 </div>
 
-Un objeto gráfico UI no es mas que clases creadas por los desarrolladores de Java con los que podremos interactuar a traves de la ejemplificación de su objeto, se puede notar que al igual que una clase común este tiene atributos y métodos por los cuales se puede acceder, con estas funcionalidades es posible mostrar una interfaz de usuario.
+Un objeto gráfico UI no es mas que clases creadas por los desarrolladores de Java contenidas en una serie de librerías como **AWT o Swing**, con los que podremos interactuar a traves de la ejemplificación de su objeto, se puede notar que al igual que una clase común este tiene atributos y métodos por los cuales se puede acceder, con estas funcionalidades es posible mostrar una interfaz de usuario.
 
 # Definición de Clase para UI
 
@@ -193,9 +193,14 @@ En Java existen muchas formas de crear Interfaces gráficas y no existe en reali
 
 <div align="center">
   <img  src="https://i.imgur.com/3aL0m2n.png">
+  <p>Estructura básica de nuestro proyecto GUI.</p>
 </div>
 
-Puede se puede notar que en nuestro paquete raíz **app**, existe otra clase Main.java, esta clase es la que ejecuta el programa. Desde esta clase llamamos a nuestra vista principal para poder ser vista.
+## EDT(Hilo despachador de eventos de Swing).
+
+Se puede notar que en nuestro paquete raíz **app**, existe otra clase **App.java**, esta clase es la que ejecuta el programa. Sin embargo, a diferencia de una aplicación que será ejecutada a través de la terminal donde se llama a la clase o función que queremos ejecutar directamente desde el método **main** 
+
+Desde esta clase llamamos a nuestra vista principal para poder ser vista.
 
 <div align="center">
   <img  src="https://i.imgur.com/PNiZIvm.png">
