@@ -12,19 +12,15 @@ Curso propuesto por el grupo de trabajo Semana de Ingenio y Diseño (**SID**) de
 
 ### Objetivos Principales
 
-- Explicar los temas principales y alcances del curso dejando claro que se quiere obtener al finalizar el curso.
-
-  - Para los estudiantes de la carrera de ingeniería de sistemas se explicara ademas como sera el sistema de notas para la obtención del grupo de trabajo.
-
-- Explicar Concepto de Objetos y comparar con el concepto de Objetos para UI
-- Explicar la estructura básica de una clase UI en Java
+- Explicar los temas principales y alcances del curso dejando claro que se quiere obtener al finalizar este.
+- Revisar el concepto de Objetos y aterrizarlo con el concepto de Objetos gráficos para UI.
+- Identificar la estructura básica de una clase UI en Java y algunas normas que se tendrán en cuenta para su construcción.
 
 ### Objetivos Secundarios
 
-- Mostrar proyectos destacados realizados por estudiantes que han pasado anteriormente por el curso.
-- Mostrar propuestas de trabajo para escoger como proyecto del curso.
-- Explicar la conformación de grupos y elección de proyectos
-- Realizar un Diagnostico de como se sienten los aspirantes del curso
+- Mostrar proyectos destacados realizados por estudiantes que han pasado anteriormente por el curso para aterrizar el alcance que busca este curso.
+- Postular propuestas de trabajo para escoger el proyecto del curso que se realizará a lo largo del curso.
+- Repasar conceptos básicos que serán pilares para la construcción de interfaces gráficas.
 
 # Introducción y Alcance de Curso
 
@@ -36,7 +32,7 @@ A continuación se muestran las temáticas que se dictarán en el curso.
   <img  src="https://i.imgur.com/jqxWaPJ.png">
 </div>
 
-Aunque las temáticas anteriores son importantes y fundamentales, algo **mas importante que se quiere enseñar es la perspectiva de una arquitectura para la construcción de aplicaciones gráficas para los clientes**.
+Aunque las temáticas anteriores son importantes y fundamentales, algo **mas importante que se quiere enseñar, es la perspectiva de una arquitectura para la construcción de aplicaciones gráficas para los clientes**.
 
 <div align="center">
   <img  src="https://i.imgur.com/DthNkAc.png">
@@ -155,7 +151,7 @@ Se puede ver que en la declaración de un objeto ocurren dos cosas interesantes:
 
 Una cosa a resaltar es el acceso a los atributos y métodos, puede notarse que al intentar acceder a la variable **numero** de la clase no es posible acceder. Esto debido a que este atributo es de acceso **privado**.
 
-Un aspecto importante a mencionar son los **métodos**  que contiene cada clase, estos tienen varias partes:
+Otro aspecto importante a mencionar son los **métodos**  que contiene cada clase, estos tienen varias partes:
 <div align='center'>
     <img  src='https://i.imgur.com/fxVFwb5.png'>
     <p>Partes de un método y como llamarlo</p>
