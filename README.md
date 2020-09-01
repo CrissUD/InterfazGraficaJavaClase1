@@ -13,7 +13,7 @@ Curso propuesto por el grupo de trabajo Semana de Ingenio y Diseño (**SID**) de
 ### Objetivos Principales
 
 - Explicar los temas principales y alcances del curso dejando claro que se quiere obtener al finalizar este.
-- Revisar el concepto de Objetos y aterrizarlo con el concepto de Objetos gráficos para UI.
+- Revisar el concepto de Objetos y aterrizarlo con el concepto de Objetos gráficos para el contexto de un proyecto de Java UI.
 - Identificar la estructura básica de una clase UI en Java y algunas normas que se tendrán en cuenta para su construcción.
 
 ### Objetivos Secundarios
@@ -32,13 +32,13 @@ A continuación se muestran las temáticas que se dictarán en el curso.
   <img  src="https://i.imgur.com/jqxWaPJ.png">
 </div>
 
-Aunque las temáticas anteriores son importantes y fundamentales, algo **mas importante que se quiere enseñar, es la perspectiva de una arquitectura para la construcción de aplicaciones gráficas para los clientes**.
+Aunque las temáticas anteriores son importantes y fundamentales, algo **más importante que se quiere enseñar, es la perspectiva de arquitectura para la construcción de aplicaciones gráficas**.
 
 <div align="center">
   <img  src="https://i.imgur.com/DthNkAc.png">
 </div>
 
-El anterior esquema esta basado en Frameworks y Librerías muy usados en el entorno del desarrollo Frontend y su enfoque da una visión organizada y estandarizada de como trabajar con proyectos Frontend. Se busca aterrizar esos conceptos utilizando el lenguaje Java para aplicaciones de escritorio, esto ademas de permitir la creación de un software organizado y estandarizado, ayudará al entendimiento principal de las metodologías que estas propuestas realizan y asi a la hora de trasladarse a estas tecnologías sea de una manera mas fácil.
+El anterior esquema esta basado en Frameworks y Librerías muy usados en el entorno del desarrollo Frontend y su enfoque da una visión organizada y estandarizada de como trabajar con proyectos Frontend. Este curso busca aterrizar esos conceptos utilizando el lenguaje Java para aplicaciones de escritorio, esto ademas de permitir la creación de un software organizado y estandarizado, ayudará al entendimiento principal de las metodologías que estas propuestas realizan y asi a la hora de trasladarse a estas tecnologías sea de una manera mas fácil.
 
 Para los estudiantes que quieren obtener el grupo de trabajo como requisito de la carrera de Ingeniería de Sistemas a continuación se muestra los porcentajes de notas que se realizaran:
 
@@ -76,12 +76,13 @@ Primero se tienen los datos Primitivos, estos datos son la parte mas pequeña en
 
 Puede notarse que la declaración consta de varias partes:
 
-- **Tipo Acceso:** este se refiere a la forma en que los datos pueden obtenerse a traves de otros archivos (clases). Esta propiedad esta enfocada en el paradigma orientado a objetos e indica como las otras clases pueden acceder o no a ciertos atributos o métodos de la clase en construcción. Estos pueden ser:
+- **Tipo Acceso:** este se refiere a la forma en que los datos pueden obtenerse a traves de otros archivos (clases). Esta propiedad esta enfocada en el paradigma orientado a objetos e indica como las otras clases pueden acceder o no a ciertos atributos o métodos de la clase. Estos pueden ser:
   - **Publico:** Se puede acceder al atributo desde cualquier otra Clase.
   - **Privado:** Unicamente se puede acceder al atributo por medio de la misma Clase.
   - **Protegido:** Solo la clase y las hijas podrán acceder al atributo.
+  - **Default:** Las clases del paquete pueden tener acceso a estas.
 - **Tipo de Dato Primitivo:** Simplemente el tipo de dato de toda la vida, puede ser int, String, float, char etc.
-- **Variable:** Es el nombre con el que se maneja el tipo de dato, puede tener el nombre que uno decida darle, salvo algunas excepciones como iniciar con numero etc.
+- **Variable:** Es el nombre con el que se maneja el tipo de dato, puede tener el nombre que uno decida darle, salvo algunas excepciones como iniciar con numero, caracteres especiales, etc.
 - **Valor inicial:** Es el valor que puede tomar una variable una vez se declare, no es necesario que este valor se incluya directamente en la declaración.
 
 ## Arreglos
@@ -107,7 +108,7 @@ Se puede notar que existen varias partes importantes a la hora de declarar un ar
 
 ## Estructuras de datos
 
-Una estructura de datos es un tipo de dato que tiene la capacidad de contener otros datos, a diferencia de un arreglo, esta puede contener datos de diferentes tipos, incluso el concepto es tan amplio que tiene la capacidad de contener Strings, enteros, flotantes, arreglos e incluso otras estructuras de datos. Este ultimo aspecto es muy importante y da lugar a la creación de estructuras algo mas complejas como listas, pilas, colas, arboles, grafos que se estudian normalmente en cursos relacionados a la algoritmia y la ciencia de datos.
+Una estructura de datos es un tipo de dato que tiene la capacidad de contener otros datos, pero a diferencia de un arreglo, esta puede contener datos de diferentes tipos y ademas no existe un limite de cuantos datos podría contener, incluso el concepto es tan amplio que tiene la capacidad de contener Strings, enteros, flotantes, arreglos e incluso otras estructuras de datos. Este ultimo aspecto es muy importante y da lugar a la creación de estructuras algo mas complejas como listas, pilas, colas, arboles, grafos que se estudian normalmente en cursos relacionados a la algoritmia y la ciencia de datos.
 
 <div align="center">
   <img  src="https://i.imgur.com/KLwVPMs.png">
@@ -129,11 +130,11 @@ Los objetos son tomados del concepto de las estructuras de datos, sin embargo es
 
 - **Clases:** La clase es la representación en código de un objeto, esta representa el molde donde se definen sus atributos, comportamientos, entornos y accesibilidad. El objeto es entonces la ejemplificación de una clase.
 - **Nuevos términos:** Cuando una variable es global para la clase (existe para todo el entorno) normalmente se suele referir a esta como **atributo**, si una variable por ejemplo es creada dentro de un método se le sigue considerando variable unicamente. Las funciones que hacen parte de la clase ahora se conocen como **métodos**.
-- **Entornos:** Un entorno es un contexto que esta aislado del resto, un método es un ejemplo de entorno, si una variable es creada dentro de él sera conocida solo para ese entorno, si otro método trata de manejar esa variable no existirá. Una clase también es un entorno que a su vez contiene otros entornos (métodos). Esto quiere decir que sus atributos y métodos solo existen en dicha clase, si se quiere acceder desde otra clase a alguna funcionalidad o atributo de este se debe tener en cuenta el tipo de acceso explicado previamente en este documento.
-- **Constructor:** Entre sus métodos una clase tiene por defecto un Constructor. Este método es la función por la cual otra clase podrá realizar una ejemplificación del objeto. El constructor habitualmente tiene el mismo nombre que la clase.
+- **Entornos (Scope):** Un entorno (Scope) es un contexto que esta aislado del resto, un método es un ejemplo de entorno, si una variable es creada dentro de él sera conocida solo para ese entorno, si otro método trata de manipular esa variable no existirá. Una clase también es un entorno que a su vez contiene otros entornos (métodos). Esto quiere decir que sus atributos y métodos solo existen en dicha clase, si se quiere acceder desde otra clase a alguna funcionalidad o atributo de este se debe tener en cuenta el tipo de acceso explicado previamente en este documento.
+- **Constructor:** Entre sus métodos una clase tiene por defecto un Constructor. Este método es la función por la cual otra clase podrá realizar una ejemplificación del objeto. El constructor habitualmente tiene el mismo nombre que la clase y siempre es el primero en ejecutarse.
 
 <div align="center">
-  <img  src="https://i.imgur.com/deSbkDe.png">
+  <img  src="https://i.imgur.com/B1EnEBx.png">
   <p>Ejemplo de una clase que representa los atributos y comportamiento de un objeto Casa con sus respectivas partes explicadas</p>
 </div>
 
@@ -162,14 +163,16 @@ Se puede observar que un método cuenta con:
 * **Tipo de retorno**: Es el tipo de dato que el método puede retornar, si no retorna nada generalmente se pone la palabra clave **void**, un método puede retornar cualquier tipo de dato desde un dato primitivo hasta objetos, arreglos, colecciónes (Lista de objetos) etc.
 * **Nombre del método**: Es arbitrario y generalmente se inicia con minúscula.
 * **Parámetros**: Un método puede recibir por parámetros cualquier cantidad de datos y de cualquier tipo, estos se ponen dentro del paréntesis y se debe denotar siempre el **tipo de dato** seguido del **nombre de la variable**, si un método no recibe nada por parámetro se pone los paréntesis vacíos "**( )**".
-* **Contenido**: Es el código escrito dentro del método, una cosa importante a aclarar es que si el método retorna algún tipo de dato obligatoriamente dentro del contenido debe estar la palabra clave **return** seguido de la variable que va a retornar y esta debe coincidir con el tipo de dato que se dijo que iba a retornar. 
-* **Argumentos**: Cuando un método se llama desde otra parte del código y el método exige el recibimiento de datos por parámetros se debe enviar cuando se llama unas variables dentro del paréntesis y estas se conocerán como argumentos. Note que en el caso de envío no es necesario denotar el tipo de dato que es la variable, con solo esta ultima basta, sin embargo Java internamente comprueba que la variable enviada corresponda al tipo de dato que se pide.
+* **Contenido**: Es el código escrito dentro del método, una cosa importante a aclarar es que si el método retorna algún tipo de dato obligatoriamente dentro del contenido debe estar la palabra clave **return** seguido de la variable que va a retornar y esta debe coincidir con el tipo de dato que se explicito que iba a retornar. 
+* **Argumentos**: Cuando un método se llama desde otra parte del código y el método exige el recibimiento de datos por parámetros, se debe enviar una serie de valores cuando se llama al método dentro del paréntesis y estas se conocerán como argumentos. Note que en el caso de envío no es necesario denotar el tipo de dato que es la variable, con solo esta ultima basta, sin embargo Java internamente comprueba que la variable enviada corresponda al tipo de dato que se pide.
+  * **Envió --> Argumentos**
+  * **Recibido --> Parámetros**
 
 <div align="center">
   <img  src="https://i.imgur.com/542tIML.png">
 </div>
 
-Para explicar mejor el concepto de objetos podemos ver en la anterior imágen dos clases, algo a resaltar es que todos los atributos son privados y los métodos son públicos en ambas clases, esto generalmente debe realizarse por principios del paradigma orientado a objetos.
+Para explicar mejor el concepto de objetos podemos ver en la anterior imágen dos clases, algo a resaltar es que todos los atributos son privados y los métodos son públicos en ambas clases, esto generalmente debe realizarse por principios del paradigma orientado a objetos y se conoce como encapsulamiento.
 
 Dentro de la clase carro entre uno de sus atributos esta el objeto Motor. Tenemos que ejemplificar el objeto antes de acceder a sus métodos y este se hace dentro del constructor para este caso (la ejemplificación del objeto se puede realizar en cualquier parte del código). Una vez el objeto este listo se pueden acceder a sus funcionalidades como por ejemplo **encender()**. Mas adelante en otra parte del código de la clase **Carro** por ejemplo en el método **arrancar()** se necesita obtener la información del cilindraje del motor, puede notarse que el atributo **cilindraje** de la clase **Motor** es privada pero por medio de su método **devolverCilindraje()** este devolverá el valor y se igualaría a la variable creada para el propósito del método arrancar.
 
@@ -177,7 +180,7 @@ Dentro de la clase carro entre uno de sus atributos esta el objeto Motor. Tenemo
   <img  src="https://i.imgur.com/KSFDD8p.png">
 </div>
 
-Un objeto gráfico UI no es mas que clases creadas por los desarrolladores de Java contenidas en una serie de librerías como **AWT o Swing**, con los que podremos interactuar a traves de la ejemplificación de su objeto, se puede notar que al igual que una clase común este tiene atributos y métodos por los cuales se puede acceder, con estas funcionalidades es posible mostrar una interfaz de usuario.
+Un objeto gráfico UI no es mas que clases creadas por los desarrolladores de Java contenidas en una serie de librerías como **AWT o Swing**, con los que se podrá interactuar a traves de la ejemplificación de su objeto, se puede notar que al igual que una clase común este tiene atributos y métodos por los cuales se puede acceder, con estas funcionalidades es posible mostrar una interfaz de usuario.
 
 # Definición de Clase para UI
 
@@ -208,7 +211,7 @@ El problema esta en que el módelo de hilos de **Swing** se basa en el uso de un
   <p>Ejemplo Creación y ejemplificación del objeto VistaPrincipal desde la Clase Main Directamente.</p>
 </div>
 
-Esto a grandes rasgos no traerá muchos problemas, probablemente tu has ejecutado aplicaciones Swing de esta forma y no notaste ningún problema, pero si en algún momento necesitar realizar operaciones asíncronas para traer información de algún servidor externo, base de datos o realizar operaciones concurrentes el entrelazado de hilos seguramente va a provocar **deadlocks** en la aplicación haciendo que la interfaz gráfica se quede bloqueada y sin funcionar. 
+Esto a grandes rasgos no traerá muchos problemas, probablemente tu has ejecutado aplicaciones Swing de esta forma y no notaste ningún problema, pero si en algún momento se necesita realizar operaciones asíncronas para traer información de algún servidor externo, base de datos o realizar operaciones concurrentes el entrelazado de hilos seguramente va a provocar **deadlocks** en la aplicación haciendo que la interfaz gráfica se quede bloqueada y sin funcionar. 
 
 Para evitar estos escenarios y como buena practica se llamará a la clase UI a traves del hilo **EDT**, el siguiente código muestra la forma correcta de hacerlo:
 ```javascript
@@ -227,7 +230,7 @@ El anterior código asegura una ejecución de la interfaz gráfica a través del
 
 La Clase Template tiene ciertas características que a continuación serán explicadas:
 
-- Una clase **Tempate** que se encarga unicamente de la muestra por pantalla de los objetos gráficos y con los que interactuara el usuario. También mostrará los valores obtenidos de la lógica realizada por otras clases.
+- Una clase **Tempate** que se encarga unicamente de la muestra por pantalla de los objetos gráficos y con los que interactuará el usuario. También mostrará los valores obtenidos de la lógica realizada por otras clases.
 - **No** se encarga del manejo de eventos ni llamada de servicios ni operaciones lógicas, su responsabilidad se reduce a la muestra de interfaces Gráficas y muestra y recolección de información que el usuario necesite ver o que este recopile.
 - Hereda de una clase **JFrame** esto le dará a la clase que creemos, propiedades gráficas para ser mostrada al usuario.
 
@@ -236,18 +239,18 @@ La Clase Template tiene ciertas características que a continuación serán expl
 </div>
 
 - Importara las librerías necesarias para configurar objetos gráficos en pantalla.
-- Como propuesta de estándar en este curso la configuración de objetos gráficos se realizará dentro del método **Constructor** sin embargo si se quiere configurar estos objetos en métodos separados no hay problema.
+- Como propuesta inicial y para propósitos de explicación de otros temas dentro del curso, la configuración de objetos gráficos se realizará dentro del método **Constructor** sin embargo si se quiere configurar estos objetos en métodos separados desde el inicio no hay problema (mas adelante se tomará este segundo enfoque y se explicara el por que un enfoque es mejor que el otro).
 <div align="center">
   <img  src="https://i.imgur.com/OBdLqiU.png">
 </div>
 
 En la imágen anterior se puede ver una serie de configuraciones, estas le dan características a la ventana y esto es posible gracias a la herencia a la clase **JFrame**. Cada configuración tiene su propósito:
 
-- **super:** Recibe por parámetro un String y le da el titulo a la ventana y se vera reflejada en la barra superior de la interfaz. Es importante recalcar que este método debe colocarse como primera linea de código dentro del constructor, de lo contrario no tendrá efecto en la vista. Otra forma de hacer esto mismo es mediante el método **setTitle**.
+- **super:** Recibe por parámetro un String y le da el titulo a la ventana que se verá reflejada en la barra superior de la interfaz. Es importante recalcar que este método debe colocarse como primera linea de código dentro del constructor, de lo contrario no tendrá efecto en la vista. Otra forma de hacer esto mismo es mediante el método **setTitle**.
 - **setDefaultCloseOperation:** Recibe por parámetro configuraciones Java. Le indica al compilador que una vez la ventana sea cerrada el programa dejara de correr, esto lo hace gracias al parámetro recibido **EXIT_ON_CLOSE**. Si no hacemos esta configuración la ventana cerrara pero el programa seguirá corriendo en el compilador de Java.
 - **setSize:** Recibe como parámetros un par de enteros. Le da propiedades de ancho y alto a la ventana, en este caso la interfaz gráfica ocupara 1200 pixeles de ancho y 700 pixeles de alto.
-- **setLocationRelativeTo:** Recibe como parámetro la ventana o el componente con el que se quiere posiciónar relativo a este. le indica al sistema que la ventana se posicione en el centro del componente que le pasemos como parámetro. Esto ya que por defecto la ventana se posicionará en el punto (0,0) del monitor. Como generalmente en pantalla solo tendremos una sola ventana de la aplicación mostrándose, el parámetro **this** le indicará a la ventana que se va a posicionar en el centro, por otro lado si le pasamos el parámetro **null** se posicionará igualmente en el centro al no haber mas ventanas. Es importante que este método se llame después de asignar el tamaño a la ventana o el compilador se confundirá y no la posicionará en el medio.
-- **setLayout** Recibe por parámetro el Layout que quiera ser utilizado para la gestión de posicionamiento. Java maneja el posicionamiento de sus objetos gráficos por medio de **LayoutManager**, este posicionamiento es algo confuso de entender cuando se esta empezando por lo que por ahora es mejor dejarlo **null** y ser nosotros mismos los que nos encarguemos del posicionamiento de los objetos gráficos.
+- **setLocationRelativeTo:** Recibe como parámetro la ventana o el componente con el que se quiere posiciónar relativo a este. le indica al sistema que la ventana se posicione en el centro del componente que le pasemos como parámetro. Esto ya que por defecto la ventana se posicionará en el punto (0,0) del monitor. Como generalmente en pantalla solo tendremos una sola ventana de la aplicación mostrándose, el parámetro **this** le indicará a la ventana que se va a posicionar en el centro de la pantalla, por otro lado si le pasamos el parámetro **null** se posicionará igualmente en el centro al no haber mas ventanas. *Es importante que este método se llame después de asignar el tamaño a la ventana o el compilador se confundirá y no la posicionará donde se quiere.*
+- **setLayout** Recibe por parámetro el LayoutManager que quiera ser utilizado para la gestión de posicionamiento. Java maneja el posicionamiento de sus objetos gráficos por medio de **LayoutManager**, este posicionamiento es algo confuso de entender cuando se esta empezando por lo que por ahora es mejor dejarlo **null** y ser nosotros mismos los que nos encarguemos del posicionamiento de los objetos gráficos.
 - **setVisible** Recibe por parámetro un booleano y por defecto esta en false, debemos cambiarlo a true. Esta configuración le indica al sistema que muestre la ventana en pantalla. Nótese que se deja de ultimas ya que primero se deben configurar la ventana y los objetos gráficos y finalmente mostrar en pantalla. Si no se deja de ultimas probablemente existan conflictos al mostrar componentes gráficos en la ventana.
 
 Existen otros métodos de configuración en ventanas que podrían ser de utilidad como por ejemplo.
@@ -263,7 +266,7 @@ Cuando se quiera crear atributos estos deben ir al comienzo de la clase y genera
   <p>Clase VistaPrincipalTemplate con la declaración de objetos gráficos y la importación de sus respectivas librerías</p>
 </div>
 
-Se creará un método solo para simular como es tener un método dentro de la clase sin embargo solo sera para ese propósito:
+Se creará un método solo para simular como es tener un método dentro de la clase sin embargo, este no tiene ningún propósito:
 
 ```javascript
 public void saludar(){
@@ -271,10 +274,10 @@ public void saludar(){
     System.out.println(mensaje);
 }
 ```
-Se puede notar que el método tiene una variable llamada **mensaje** de tipo String, y es una variable por que solo sera conocido por este método. La clase se vera así finalmente con sus respectivas partes.
+Se puede notar que el método tiene una variable llamada **mensaje** de tipo String, y es una variable por que solo será conocido por el scope de este método. La clase se vera así finalmente con sus respectivas partes.
 
 <div align="center">
-  <img  src="https://i.imgur.com/2rnxzcQ.png">
+  <img  src="https://i.imgur.com/2HS0s4I.png">
   <p>Clase VistaPrincipalTemplate final</p>
 </div>
 
@@ -289,7 +292,6 @@ El resultado obtenido hasta ahora después de la configuración inicial de la cl
 
 # Actividades
 
-- Realizar el formulario Diagnostico de Google enviado por correo electrónico.
-- Realizar la elección de proyecto de curso y enviarla por medio del formulario de Google.
-- Realizar la conformación del grupo con quien se realizará el proyecto (2 personas).
+- Enviá un correo a cfpatinoc@correo.udistrital.edu.co con el motivo de que deseas tomar el curso, luego te enviare un formulario Diagnostico de Google para saber como te sientes de conocimientos antes de comenzar el curso.
+- Realizar la elección de proyecto de curso y enviarla por medio del formulario de Google que será enviado a traves de correo electrónico.
 - Realizar un ejemplo de una clase UI con explicación de cada parte.
