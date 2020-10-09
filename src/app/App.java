@@ -13,7 +13,6 @@ public class App {
    */
   public static void main(String[] args) {
     Runnable runApplication = new Runnable() {
-
       public void run() {
         VistaPrincipalTemplate vista = new VistaPrincipalTemplate();
         vista.getClass();
