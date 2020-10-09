@@ -108,7 +108,7 @@ Se puede notar que existen varias partes importantes a la hora de declarar un ar
 
 ## Estructuras de datos
 
-Una estructura de datos es un tipo de dato que tiene la capacidad de contener otros datos, pero a diferencia de un arreglo, esta puede contener datos de diferentes tipos y ademas no existe un limite de cuantos datos podría contener, incluso el concepto es tan amplio que tiene la capacidad de contener Strings, enteros, flotantes, arreglos e incluso otras estructuras de datos. Este ultimo aspecto es muy importante y da lugar a la creación de estructuras algo mas complejas como listas, pilas, colas, arboles, grafos que se estudian normalmente en cursos relacionados a la algoritmia y la ciencia de datos.
+Una estructura de datos es un tipo de dato que tiene la capacidad de contener otros datos, pero a diferencia de un arreglo, esta puede contener datos de diferentes tipos y ademas no existe un limite de cuantos datos podría contener. Otro punto de diferencia es que ya no obtiene sus valores a través de posiciones, sino que lo hace mediante un sistema conocido como **clave/valor**, donde cada valor es obtenido a través del nombre de la variable que se indicó dentro de la estructura. Incluso el concepto es tan amplio que tiene la capacidad de contener Strings, enteros, flotantes, arreglos e incluso otras estructuras de datos. Este ultimo aspecto es muy importante y da lugar a la creación de estructuras algo mas complejas como listas, pilas, colas, arboles, grafos que se estudian normalmente en cursos relacionados a la algoritmia y la ciencia de datos.
 
 <div align="center">
   <img  src="https://i.imgur.com/KLwVPMs.png">
