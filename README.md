@@ -124,7 +124,7 @@ Los objetos son tomados del concepto de las estructuras de datos, sin embargo es
 
 - **Comportamiento:** A diferencia de las estructuras de datos un objeto tiene una serie de **métodos** (funciones) que le proporcionan comportamiento a este. Tal concepto es importante y por lo general son los métodos el medio por el cual un objeto interactúa con otro.
 <div align="center">
-  <img  src="https://i.imgur.com/pc6wCJy.png">
+  <img  src="https://i.imgur.com/SDjPF8Y.png">
   <p>Ejemplo de métodos encargados de obtener y configurar un atributo nombre</p>
 </div>
 
